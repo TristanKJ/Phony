@@ -3,4 +3,6 @@
     <string name="click_me">Click Me</string>
     <string name="value_string">The current count is %d</string>
     <string name="next_activity">Next Activity</string>
+    <string name="reset_click_count">Reset Click Count</string>
+    <string name="back">Back</string>
 </resources>
