@@ -24,7 +24,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next_activity"
+        android:gravity="center"
+        android:padding="12sp"
+        android:text="@string/future_click"
+        android:onClick="asyncIncrement"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Settings"
         android:onClick="launchNextActivity" />
 
 
