@@ -1,14 +1,16 @@
-package com.phony.reddwarf.phony;
+package com.phony.reddwarf.phony.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.phony.reddwarf.phony.Prefs;
+import com.phony.reddwarf.phony.R;
+
 /**
  * Created by RedDwarf on 11/24/2015.
  */
-public class SettingsActivity extends Activity {
+public class SettingsActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

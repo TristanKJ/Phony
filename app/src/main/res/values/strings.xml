@@ -7,4 +7,6 @@
     <string name="Settings">settings</string>
     <string name="future_click">Future Click</string>
     <string name="ok">Ok</string>
+    <string name="characters">Characters</string>
+    <string name="empty_string">Still fetching the data, or there is no data associated with that call</string>
 </resources>

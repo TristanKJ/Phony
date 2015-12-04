@@ -1,17 +1,20 @@
-package com.phony.reddwarf.phony;
+package com.phony.reddwarf.phony.activity;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.phony.reddwarf.phony.task.AsyncIncrementTask;
+import com.phony.reddwarf.phony.PostExecuteInterface;
+import com.phony.reddwarf.phony.Prefs;
+import com.phony.reddwarf.phony.R;
 
 /**
  * Created by RedDwarf on 11/13/2015.
  */
-public class MainActivity extends Activity implements PostExecuteInterface {
+public class MainActivity extends BaseActivity implements PostExecuteInterface {
 
     private int clickCounter;
 
@@ -44,6 +47,8 @@ public class MainActivity extends Activity implements PostExecuteInterface {
     public void asyncIncrement(View view) {
         AsyncIncrementTask asyncTask = new AsyncIncrementTask(this, false);
         asyncTask.execute();
+        Toast toast = Toast.makeText(this, "Incrementing counter in 5 seconds", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     @Override
@@ -56,10 +61,8 @@ public class MainActivity extends Activity implements PostExecuteInterface {
         showMessage(e.getMessage());
     }
 
-    private void showMessage(String message) {
-        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-        dialog.setMessage(message);
-        dialog.setPositiveButton(R.string.ok, null);
-        dialog.create().show();
+    public void showCharacters(View view) {
+        Intent intent = new Intent(this, CharacterListActivity.class);
+        startActivity(intent);
     }
 }

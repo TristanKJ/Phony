@@ -1,6 +1,8 @@
-package com.phony.reddwarf.phony;
+package com.phony.reddwarf.phony.task;
 
 import android.os.AsyncTask;
+
+import com.phony.reddwarf.phony.PostExecuteInterface;
 
 /**
  * Created by RedDwarf on 11/30/2015.

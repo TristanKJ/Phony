@@ -35,5 +35,10 @@
         android:text="@string/Settings"
         android:onClick="launchNextActivity" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showCharacters"
+        android:text="@string/characters"/>
 
 </LinearLayout>
